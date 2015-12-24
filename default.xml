@@ -331,12 +331,9 @@
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project name="aosp-armani/platform_hardware_libhardware" path="hardware/libhardware" groups="pdk" remote="github" revision="aosp-5.1" />
   <project name="F-AOSP/platform_hardware_libhardware_legacy" path="hardware/libhardware_legacy" groups="pdk" remote="github" revision="aosp-5.1" />
-  <project name="F-AOSP/platform_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8974" remote="github" revision="aosp-5.1-8974" />
   <project name="F-AOSP/platform_hardware_qcom_bt" groups="qcom" path="hardware/qcom/bt" remote="github" revision="aosp-5.1" />
-  <project name="F-AOSP/platform_hardware_qcom_display" path="hardware/qcom/display-caf/msm8974" remote="github" revision="aosp-5.1-8974" />
   <project name="F-AOSP/platform_hardware_qcom_fm" path="hardware/qcom/fm" remote="github" revision="aosp-5.1" />
   <project name="F-AOSP/platform_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="github" revision="aosp-5.1" groups="qcom" />
-  <project name="F-AOSP/platform_hardware_qcom_media" path="hardware/qcom/media-caf/msm8974" remote="github" revision="aosp-5.1-8974" />
   <project name="F-AOSP/platform_hardware_qcom_wlan" groups="qcom_wlan" path="hardware/qcom/wlan" remote="github" revision="aosp-5.1" />
   <project name="F-AOSP/platform_hardware_ril" path="hardware/ril" groups="pdk" remote="github" revision="aosp-5.1" />
   <project name="F-AOSP/platform_hardware_ril" path="hardware/ril-caf" groups="pdk" remote="github" revision="aosp-5.1-caf" />
@@ -472,6 +469,12 @@
   <project path="kernel/xiaomi/armani" name="aosp-armani/kernel_msm_armani" remote="github" revision="aosp-5.1" />
   <project path="device/xiaomi/armani" name="aosp-armani/android_device_xiaomi_armani" remote="github" revision="aosp-5.1" />
   <project path="vendor/xiaomi" name="aosp-armani/proprietary_vendor_xiaomi" remote="github" revision="aosp-5.1" />
+  
+  <!-- Generic MSM8226 -->
+  <project name="CyanogenMod/android_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8226" remote="github" revision="cm-12.1-caf-8226" />
+  <project name="CyanogenMod/android_hardware_qcom_display" path="hardware/qcom/display-caf/msm8226" remote="github" revision="cm-12.1-caf-8226" />
+  <project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media-caf/msm8226" remote="github" revision="cm-12.1-caf-8226" />
+
 
 
 </manifest>
