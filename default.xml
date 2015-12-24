@@ -8,11 +8,11 @@
            fetch="https://github.com/"
            review="review.cyanogenmod.org" />
 
-  <default revision="refs/tags/android-5.1.1_r16"
+  <default revision="refs/tags/android-5.1.1_r30"
            remote="aosp"
            sync-j="4" />
 
-  <project name="F-AOSP/platform_build" path="build" groups="pdk,tradefed" remote="github" revision="aosp-5.1" >
+  <project name="aosp-armani/platform_build" path="build" groups="pdk,tradefed" remote="github" revision="aosp-5.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="build.sh" dest="build.sh" />
   </project>
@@ -44,8 +44,8 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
-  <project name="F-AOSP/platform_device_qcom_common" path="device/qcom/common" remote="github" revision="aosp-5.1" />
-  <project name="F-AOSP/platform_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="aosp-5.1" />
+  <project name="aosp-armani/platform_device_qcom_common" path="device/qcom/common" remote="github" revision="aosp-5.1" />
+  <project name="aosp-armani/platform_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="aosp-5.1" />
   <project path="device/sample" name="device/sample" groups="pdk" revision="refs/tags/android-5.1.1_r5" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" revision="refs/tags/android-5.1.1_r5" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -58,7 +58,7 @@
   <project path="external/apache-xml" name="platform/external/apache-xml" groups="pdk-cw-fs" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" />
-  <project name="F-AOSP/platform_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" groups="pdk" remote="github" revision="aosp-5.1" />
+  <project name="aosp-armani/platform_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" groups="pdk" remote="github" revision="aosp-5.1" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project name="F-AOSP/platform_external_busybox" path="external/busybox" remote="github" revision="aosp-5.1" />
@@ -243,14 +243,14 @@
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
   <project name="F-AOSP/platform_external_sepolicy" path="external/sepolicy" groups="pdk" remote="github" revision="aosp-5.1" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" />
-  <project name="F-AOSP/platform_external_skia" path="external/skia" groups="pdk-cw-fs,qcom_msm8x26" remote="github" revision="aosp-5.1" />
+  <project name="aosp-armani/platform_external_skia" path="external/skia" groups="pdk-cw-fs,qcom_msm8x26" remote="github" revision="aosp-5.1" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" />
-  <project name="F-AOSP/platform_external_stagefright-plugins" path="external/stagefright-plugins" remote="github" revision="aosp-5.1" />
+  <project name="aosp-armani/platform_external_stagefright-plugins" path="external/stagefright-plugins" remote="github" revision="aosp-5.1" />
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk-cw-fs" />
@@ -274,8 +274,8 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project name="F-AOSP/platform_frameworks_av" path="frameworks/av" groups="pdk" remote="github" revision="aosp-5.1" />
-  <project name="F-AOSP/platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="github" revision="lollipop-5.1" />
+  <project name="aosp-armani/platform_frameworks_av" path="frameworks/av" groups="pdk" remote="github" revision="aosp-5.1" />
+  <project name="aosp-armani/platform_frameworks_base" path="frameworks/base" groups="pdk-cw-fs" remote="github" revision="lollipop-5.1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" revision="refs/tags/android-5.1.1_r5" />
@@ -284,7 +284,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project name="F-AOSP/platform_frameworks_native" path="frameworks/native" groups="pdk" remote="github" revision="aosp-5.1" />
+  <project name="aosp-armani/platform_frameworks_native" path="frameworks/native" groups="pdk" remote="github" revision="aosp-5.1" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project name="F-AOSP/platform_frameworks_opt_bluetooth" path="frameworks/opt/bluetooth" groups="pdk-cw-fs" remote="github" revision="aosp-5.1" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -297,11 +297,11 @@
   <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" groups="pdk-cw-fs" />
   <project name="F-AOSP/platform_frameworks_opt_net_ims" path="frameworks/opt/net/ims" groups="frameworks_ims,pdk-cw-fs" remote="github" revision="lollipop-5.1" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" />
-  <project name="F-AOSP/platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="aosp-5.1" groups="pdk" />
+  <project name="aosp-armani/platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="github" revision="aosp-5.1" groups="pdk" />
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" revision="refs/tags/android-5.1.1_r5" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
-  <project name="F-AOSP/platform_frameworks_opt_telephony" path="frameworks/opt/telephony" groups="pdk" remote="github" revision="lollipop-5.1" />
+  <project name="aosp-armani/platform_frameworks_opt_telephony" path="frameworks/opt/telephony" groups="pdk" remote="github" revision="lollipop-5.1" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" />
@@ -328,7 +328,7 @@
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project name="F-AOSP/platform_hardware_libhardware" path="hardware/libhardware" groups="pdk" remote="github" revision="aosp-5.1" />
+  <project name="aosp-armani/platform_hardware_libhardware" path="hardware/libhardware" groups="pdk" remote="github" revision="aosp-5.1" />
   <project name="F-AOSP/platform_hardware_libhardware_legacy" path="hardware/libhardware_legacy" groups="pdk" remote="github" revision="aosp-5.1" />
   <project name="F-AOSP/platform_hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8974" remote="github" revision="aosp-5.1-8974" />
   <project name="F-AOSP/platform_hardware_qcom_bt" groups="qcom" path="hardware/qcom/bt" remote="github" revision="aosp-5.1" />
@@ -370,7 +370,7 @@
   <project name="F-AOSP/platform_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
-  <project name="F-AOSP/platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="lollipop-5.1" />
+  <project name="aosp-armani/platform_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="lollipop-5.1" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -441,7 +441,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" revision="refs/tags/android-5.1.1_r5" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" revision="refs/tags/android-5.1.1_r5" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project name="F-AOSP/platform_system_core" groups="pdk" path="system/core" remote="github" revision="aosp-5.1" />
+  <project name="aosp-armani/platform_system_core" groups="pdk" path="system/core" remote="github" revision="aosp-5.1" />
   <project name="F-AOSP/platform_system_extras" groups="pdk" path="system/extras" remote="github" revision="aosp-5.1" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project name="F-AOSP/platform_system_media" path="system/media" groups="pdk" remote="github" revision="aosp-5.1" />
@@ -463,8 +463,14 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project name="F-AOSP/platform_vendor_aosp" path="vendor/aosp" remote="github" revision="aosp-5.1" />
+  <project name="aosp-armani/platform_vendor_aosp" path="vendor/aosp" remote="github" revision="aosp-5.1" />
 
-  <project name="F-AOSP/manifest" path="manifest" remote="github" revision="lollipop-5.1" />
+  <project name="aosp-armani/manifest" path="manifest" remote="github" revision="lollipop-5.1" />
+  
+  <!-- armani repos -->
+  <project path="kernel/xiaomi/armani" name="aosp-armani/kernel_msm_armani" remote="github" revision="aosp-5.1" />
+  <project path="device/xiaomi/armani" name="aosp-armani/android_device_xiaomi_armani" remote="github" revision="aosp-5.1" />
+  <project path="vendor/xiaomi" name="aosp-armani/proprietary_vendor_xiaomi" remote="github" revision="aosp-5.1" />
+
 
 </manifest>
